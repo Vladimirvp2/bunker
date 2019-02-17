@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LocalisationList>
+
+	<!-- Common -->
+    <word key="ok" val="Ok"/>
+    <word key="cancel" val="Cancel"/>
+    <word key="yes" val="Yes"/>
+    <word key="no" val="No"/>
+	<word key="next" val="Next"/>
+	<word key="back" val="Back"/>
+	<word key="start" val="Start"/>
+    <word key="not_implemented" val="Not implemented"/>
+    <word key="not_yet_available" val="Not yet available"/>		
+	
+    <word key="error" val="Error"/>
+    <word key="info" val="Information"/>
+    <word key="warning" val="Warning"/>
+    <word key="enter_number" val="Enter number"/>		
+	
+	<!-- Main window -->
+    <word key="app_name" val="Böse"/>
+    <word key="quit" val="Quit"/>	
+    <word key="do_you_want_to_quit_app" val="Do you really want to quit the application?"/>
+	<!-- Main menu -->
+		<!-- Database menu -->
+    <word key="main_menu_db" val="Database"/>		
+	<word key="create_db" val="Create"/>
+	<word key="import_db" val="Import"/>
+	<word key="connect_db" val="Connect"/>
+	<word key="disconnect_db" val="Disconnect"/>
+	<word key="remove_db_from_config" val="Remove from user"/>
+	<word key="remove_db_from_filesystem" val="Remove from filesystem"/>
+	<word key="save" val="Save"/>
+	<word key="quit" val="Quit"/>
+
+		<!-- Operations menu -->
+    <word key="main_menu_operations" val="Operations"/>
+    <word key="main_menu_caregory" val="Category"/>
+    <word key="main_menu_record" val="Record"/>
+    <word key="add" val="Add"/>
+    <word key="edit" val="Edit"/>	
+    <word key="delete" val="Delete"/>
+    <word key="add_category" val="Add category"/>	
+
+		<!-- Settings menu -->
+    <word key="main_menu_settings" val="Settings"/>
+    <word key="user_settings" val="User settings"/>
+
+		<!-- Info menu -->
+    <word key="main_menu_info" val="Info"/>
+    <word key="info" val="About"/>
+    <word key="manual" val="Manual"/>
+
+		<!-- connect exceptions -->
+    <word key="database_with_file" val="Database with file"/>
+    <word key="no_exist" val="doesn't exist"/>
+    <word key="can_not_connect_to_db" val="Can't connect. Database"/>
+    <word key="corrupted" val="corrupted"/>	
+	<word key="wrong_password_provided" val="Can't connect. Wrong password provided"/>	
+	
+	
+	<!-- Remove DB -->
+	<word key="removing_db" val="Removing database"/>
+	<word key="remove_db_from_config_question" val="Do you really want to remove the selected database from your config file?"/>
+	<word key="remove_db_from_filesystem_question" val="Do you really want to remove the selected database from filesystem ?"/>
+    <word key="remove_db_from_filesystem_no_file" val="Couldn't find the database file to remove from filesystem. No such file exists"/>
+    <word key="db_from_config_remove_ok" val="The database has been successfully removed from your config"/>	
+	
+	<!-- Remove category -->
+	<word key="removing_category" val="Removing category"/>
+	<word key="remove_category" val="Do you really want to remove the selected category?"/>	
+
+	<!-- Remove record -->
+	<word key="removing_record" val="Removing record"/>
+	<word key="remove_record" val="Do you really want to remove the selected record?"/>		
+	
+	<!-- Login dialog -->
+	<word key="login_dialog" val="Login"/>
+    <word key="login" val="Login"/>
+    <word key="password" val="Password"/>
+    <word key="register" val="Register"/>	
+	<word key="you_entered_wrong_login" val="You entered wrong login!"/>
+	<word key="you_entered_wrong_password" val="You entered wrong password for the above login!"/>
+
+	<!-- Register new user dialog -->
+	<word key="register_title" val="Register new user"/>
+    <word key="login_valid_symbols" val="a-Z,0-9.-_"/>
+    <word key="password_valid_symbols" val="a-Z,0-9.-_"/>	
+	<word key="confirm_password" val="Confirm password"/>
+	<word key="weak" val="Weak"/>
+    <word key="middle" val="Middle"/>
+    <word key="strong" val="Strong"/>
+    <word key="taken" val="Taken"/>
+	<word key="free" val="Free"/>
+    <word key="wrong_value" val="Invalid"/>
+    <word key="no_match" val="No match"/>
+
+    <word key="invalid_login" val="Invalid login"/>
+    <word key="login_at_least_1_symbol" val="Login name should be at least 1 symbol!"/>
+
+    <word key="invalid_symbols" val="Invalid symbols"/>	
+    <word key="should_be_only" val="Should be only"/>	
+
+    <word key="duplicate_login" val="Duplicate login"/>
+    <word key="user_exist" val="User with such login already exist"/>
+
+    <word key="invalid_password" val="Invalid password"/>
+    <word key="password_at_least_1_symbol" val="Password should be at least 1 symbol!"/>
+    <word key="password_contains_invalid_symbols" val="Password contains invalid symbols"/>
+
+    <word key="mismatch" val="Mismatch"/>
+    <word key="password_confirm_mismatch" val="Password and confirm password mismatch"/>
+    
+	<!-- Add new record dialog -->
+	<word key="add_new_record" val="Add new record"/>
+    <word key="site" val="Site"/>
+    <word key="username" val="Username"/>
+    <word key="email" val="Email"/>
+    <word key="comments" val="Comments"/>
+    <word key="password_show" val="Show password"/>	
+	<!-- Edit record dialog -->
+	<word key="edit_record" val="Edit record"/>	
+	
+	<!-- Add new category dialog -->
+	<word key="add_new_category" val="Add new category"/>
+	<word key="name" val="Name"/>
+	
+	<!-- Edit category dialog -->
+	<word key="edit_category" val="Edit category"/>	
+
+	<!-- Add existing DB dialog -->
+	<word key="add_existing_db" val="Add existing database"/>
+	<word key="path_to_file" val="Path to file"/>
+	<word key="file" val="File"/>
+	
+
+
+	
+	<!-- Check record data in add/edit record dialog -->
+	<word key="invalid_value" val="Invalid value"/>
+	<word key="site_empty" val="Site should be at least 1 character long"/>
+	<word key="contains_invalid_value" val="contains invalid symbols"/>	
+	
+	<!-- Add new DB dialog -->
+	<word key="path" val="Path"/>
+	<word key="db_name" val="Database name"/>
+
+	<!-- Add existing DB dialog -->
+	<word key="db_exist" val="Database with such path already added"/>
+
+	
+	
+	<!-- Merge DB dialog -->
+		<!-- Databases tab -->
+		<word key="merge_databases_dialog_title" val="Merge databases"/>
+		<word key="databases" val="Databases"/>
+		<word key="choose_databases_to_merge" val="Choose databases to merge:"/>
+		<word key="user_databases" val="User's databases"/>
+		<word key="chosen_databases" val="Chosen databases"/>
+		<word key="add_btn" val="Add"/>
+		<word key="remove_btn" val="Remove"/>
+		
+		<!-- Merge modes tab -->
+		<word key="merge_mode" val="Merge mode"/>
+		<word key="choose_merge_mode" val="Choose the merge mode:"/>
+		<word key="rewrite_olders_mode" val="Rewrite older records by newer ones"/>
+		<word key="manual_mode" val="Manually(prompted with dialog)"/>
+		<word key="database_priority_mode" val="By database priority"/>	
+
+		<!-- Priority tab -->
+		<word key="database_priorities" val="Database priorities"/>
+		<word key="set_db_priorities" val="Set priorities* :"/>
+		<word key="set_db_priorities_prompt" val="*Select a database and open the context menu"/>	
+		<word key="priority_title" val="Priority"/>
+		<word key="databases_title" val="Databases"/>
+		<word key="set_priority_menu" val="Set priority"/>
+
+		<!-- Result database tab -->
+		<word key="result_database" val="Result database"/>
+		<word key="provide_info_result_database" val="Provide information for result database:"/>
+		<word key="press_start_to_begin_merge" val="Press 'Start' to begin merging process"/>
+
+
+		<!-- Message dialogs -->
+		<word key="no_db_to_merge" val="No databases chosen for merge"/>
+		<word key="provide_priorities_for_all_db" val="Provide priorities for all the chosen databases"/>		
+		<word key="db_already_added" val="Database already added"/>	
+		<word key="such_priority_already_used" val="Such priority already used"/>
+		<word key="enter_priority" val="Enter priority value (integer)"/>
+
+		<word key="do_you_want_to_quit_merge_wizard" val="Do you really want to quit the merge wizard?"/>		
+
+</LocalisationList>

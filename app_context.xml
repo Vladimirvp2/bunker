@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<context id="easypass-context">
+    <component id="UserConfig"
+	        dotted-name="DataModel.UserConfigManager.UserConfigManager"
+			strategy="singleton">
+    </component>
+    <component id="DBManager"
+	        dotted-name="DataModel.DataBaseManager.DataBaseManager"
+			strategy="singleton">
+    </component>
+    <component id="LoginView"
+	        dotted-name="GUI.Dialogs.Login.Login"
+			strategy="borg">
+	    <init>
+            <arg reference="LoginController" />
+			<arg reference="Localization" />
+        </init>
+    </component>
+    <component id="LoginController"
+	        dotted-name="Controllers.LoginController.LoginController"
+			strategy="borg">
+	    <init>
+			<arg reference="UserConfig" />
+			<arg reference="Notifier" />
+			<arg reference="Localization" />
+        </init>
+    </component>
+    <component id="MainApp"
+	        dotted-name="GUI.AppMainWin.MainWin"
+			strategy="borg">
+	    <init>
+			<arg reference="MainWinController" />
+			<arg reference="Notifier" />
+			<arg reference="Localization" />
+        </init>			
+    </component>
+    <component id="Notifier"
+	        dotted-name="Common.Notifier.Notifier"
+			strategy="singleton">
+    </component>
+    <component id="Localization"
+	        dotted-name="Common.Localization.Localization"
+			strategy="singleton">
+	    <init>
+			<arg><int>1</int></arg>
+        </init>			
+    </component>
+	
+    <component id="ResourceManager"
+	        dotted-name="Common.ResourceManager.ResourceManager"
+			strategy="singleton">
+	    <init>
+        </init>			
+    </component>	
+
+
+
+    <component id="RegisterView"
+	        dotted-name="GUI.Dialogs.Register.Register"
+			strategy="borg">
+	    <init>
+            <arg reference="RegisterController" />
+			<arg reference="Localization" />
+        </init>
+    </component>
+    <component id="RegisterController"
+	        dotted-name="Controllers.RegisterController.RegisterController"
+			strategy="borg">
+	    <init>
+			<arg reference="UserConfig" />
+			<arg reference="Notifier" />
+			<arg reference="Localization" />
+        </init>
+    </component>
+
+    <component id="MainWinController"
+	        dotted-name="Controllers.MainWinController.MainWinController"
+			strategy="borg">
+	    <init>
+			<arg reference="UserConfig" />
+			<arg reference="DBManager" />			
+			<arg reference="Notifier" />
+			<arg reference="Localization" />
+        </init>
+    </component>
+    <!-- Add new record dialog -->
+    <component id="AddRecordView"
+	        dotted-name="GUI.Dialogs.AddRecord.AddRecord"
+			>
+	    <init>
+            <arg reference="AddRecordController" />
+			<arg reference="Localization" />
+        </init>
+    </component>
+    <component id="AddRecordController"
+	        dotted-name="Controllers.AddRecordController.AddRecordController"
+			>
+	    <init>
+			<arg reference="DBManager" />
+			<arg reference="Notifier" />
+			<arg reference="Localization" />
+        </init>
+    </component>
+    <!-- Edit record dialog -->
+    <component id="EditRecordView"
+	        dotted-name="GUI.Dialogs.EditRecord.EditRecord">
+	    <init>
+            <arg reference="EditRecordController" />
+			<arg reference="Localization" />
+        </init>
+    </component>
+    <component id="EditRecordController"
+	        dotted-name="Controllers.EditRecordController.EditRecordController"
+			>
+	    <init>
+			<arg reference="DBManager" />
+			<arg reference="Notifier" />
+			<arg reference="Localization" />
+        </init>
+    </component>
+
+    <!-- Add category dialog -->
+    <component id="AddCategoryView"
+	        dotted-name="GUI.Dialogs.AddCategory.AddCategory">
+	    <init>
+            <arg reference="AddCategoryController" />
+			<arg reference="Localization" />
+        </init>
+    </component>
+    <component id="AddCategoryController"
+	        dotted-name="Controllers.AddCategoryController.AddCategoryController"
+			>
+	    <init>
+			<arg reference="DBManager" />
+			<arg reference="Notifier" />
+			<arg reference="Localization" />
+        </init>
+    </component>
+
+    <!-- Edit category dialog -->
+    <component id="EditCategoryView"
+	        dotted-name="GUI.Dialogs.EditCategory.EditCategory">
+	    <init>
+            <arg reference="EditCategoryController" />
+			<arg reference="Localization" />
+        </init>
+    </component>
+    <component id="EditCategoryController"
+	        dotted-name="Controllers.EditCategoryController.EditCategoryController"
+			>
+	    <init>
+			<arg reference="DBManager" />
+			<arg reference="Notifier" />
+			<arg reference="Localization" />
+        </init>
+    </component>
+
+    <!-- Add existing DB dialog -->
+    <component id="AddExistingDBView"
+	        dotted-name="GUI.Dialogs.AddExistingDB.AddExistingDB">
+	    <init>
+            <arg reference="AddExistingDBController" />
+			<arg reference="Localization" />
+        </init>
+    </component>
+    <component id="AddExistingDBController"
+	        dotted-name="Controllers.AddExistingDBController.AddExistingDBController"
+			>
+	    <init>
+			<arg reference="DBManager" />
+			<arg reference="Notifier" />
+			<arg reference="Localization" />
+        </init>
+    </component>
+
+    <!-- Add new DB dialog -->
+    <component id="AddNewDBView"
+	        dotted-name="GUI.Dialogs.AddNewDB.AddNewDB">
+	    <init>
+            <arg reference="AddNewDBController" />
+			<arg reference="Localization" />
+        </init>
+    </component>
+    <component id="AddNewDBController"
+	        dotted-name="Controllers.AddNewDBController.AddNewDBController"
+			>
+	    <init>
+			<arg reference="DBManager" />
+			<arg reference="Notifier" />
+			<arg reference="Localization" />
+        </init>
+    </component>
+
+    <!-- Password generate Dialog -->
+    <component id="GenPasswordView"
+	        dotted-name="GUI.Dialogs.PasswordGenerate.PasswordGenerate">
+	    <init>
+            <arg reference="GenPasswordController" />
+			<arg reference="Localization" />
+        </init>
+    </component>
+	
+    <component id="GenPasswordController"
+	        dotted-name="Controllers.PasswordGenerateController.PasswordGenerateController"
+			>
+	    <init>
+			<arg reference="GenPasswordService" />
+			<arg reference="Notifier" />
+			<arg reference="Localization" />
+        </init>
+    </component>
+	
+    <component id="GenPasswordService"
+	        dotted-name="Services.PasswordGenerator.PasswordGenerator">
+
+    </component>
+
+    <!-- Сollect entropy  Dialog -->
+    <component id="CollectEntropyView"
+	        dotted-name="GUI.Dialogs.PasswordGenerate.CollectEntropy">
+	    <init>
+            <arg reference="CollectEntropyController" />
+			<arg reference="Localization" />
+        </init>
+    </component>
+	
+    <component id="CollectEntropyController"
+	        dotted-name="Controllers.PasswordGenerateController.CollectEntropyController">
+	    <init>
+			<arg reference="Notifier" />
+			<arg reference="Localization" />
+        </init>
+    </component>
+	
+    <!-- Merge databases  Dialog -->
+    <component id="MergeDatabasesView"
+	        dotted-name="GUI.Dialogs.MergeDatabases.MergeDatabases">
+	    <init>
+            <arg reference="MergeDatabasesController" />
+			<arg reference="Localization" />
+			<arg reference="Notifier" />
+        </init>
+    </component>
+	
+    <component id="MergeDatabasesController"
+	        dotted-name="Controllers.MergeDatabasesController.MergeDatabasesController">
+	    <init>
+			<arg reference="UserConfig" />
+			<arg reference="DBManager" />
+			<arg reference="Notifier" />
+			<arg reference="Localization" />
+        </init>
+    </component>
+	
+	
+    <component id="MainApp2"
+	        dotted-name="GUI.AppMainWin.MainWin2">
+	    <init>
+			<arg reference="Notifier" />
+			<arg reference="Localization" />
+        </init>			
+    </component>
+	
+	
+	
+</context>
+

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ResourceList>
+    <res key="category_image" val="Resources/Icons/category_icon.gif"/>
+    <res key="db_connected_image" val="Resources/Icons/database_icon3.gif"/>
+    <res key="db_disconnected_image" val="Resources/Icons/database_disconnected.gif"/>
+    <!-- DB menu -->
+    <res key="add_new_db_image" val="Resources/Icons/add_new_db.gif"/>
+    <res key="add_existing_db_image" val="Resources/Icons/add_existing_db.gif"/>
+    <res key="remove_db_from_config_image" val="Resources/Icons/remove_db_from_config.gif"/>
+    <res key="disconnected_image" val="Resources/Icons/disconnect.gif"/>
+    <res key="connected_image" val="Resources/Icons/connect.gif"/>
+    <res key="save_image" val="Resources/Icons/save.gif"/>
+	<!-- Operations menu -->	
+    <res key="add" val="Resources/Icons/add.gif"/>
+    <res key="edit" val="Resources/Icons/edit.gif"/>
+    <res key="delete" val="Resources/Icons/delete.gif"/>
+	<!-- Info menu -->		
+	<res key="info_image" val="Resources/Icons/info.gif"/>
+	<res key="back_btn_image" val="Resources/Icons/back.gif"/>
+	<res key="next_btn_image" val="Resources/Icons/next.gif"/>	
+	
+</ResourceList>
